@@ -1,0 +1,98 @@
+:root {
+    /* Kolory z Twojej aplikacji TripDiary */
+    --primary-color: #41683F;   /* hunter_green - Główne elementy, linki */
+    --secondary-color: #2A4529; /* hunter_green_dark - Akcenty, hover */
+    --bg-color: #FEFEEC;        /* ivory - Tło strony */
+    --text-color: #231C1B;      /* coffee_bean - Zwykły tekst */
+    --heading-color: #2A4529;   /* hunter_green_dark - Nagłówki (H1, H2) */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff; /* Zostawiamy białe tło karty dla kontrastu z Ivory */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h1 {
+    color: var(--heading-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--heading-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.date {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Linki i kontakt */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.contact-email {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.contact-email:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsywność */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
